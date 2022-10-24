@@ -19,4 +19,6 @@ void freeBoard(char** board, int numRows, int numCols);
 
 void printBoard(char** board, int numRows, int numCols);
 
+void writeBoardToFile(char** board, char* filename);
+
 char** updateBoard(char** board, int automaton, int numRows, int numCols);
