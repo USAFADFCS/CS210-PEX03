@@ -21,4 +21,4 @@ void printBoard(char** board, int numRows, int numCols);
 
 void writeBoardToFile(char** board, int numRows, int numCols, char* filename);
 
-char** updateBoard(char** board, int automaton, int numRows, int numCols);
+char** updateBoard(char** board, int automaton, int numRows, int numCols, int rowToUpdate);
