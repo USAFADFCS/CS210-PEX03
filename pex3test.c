@@ -1,4 +1,4 @@
-/** pex3test.h
+/** pex3test.c
  * =============================================================
  * Name: Your Name
  * Section:  Your Section
@@ -6,6 +6,9 @@
  * Purpose:  FILL IN
  * ============================================================= */
 
-void runAllTests() {
+#include "pex3functs.h"
+#include <stdio.h>
 
+void runAllTests() {
+    printf("No tests implemented...\n");
 }

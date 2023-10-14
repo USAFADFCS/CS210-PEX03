@@ -5,20 +5,26 @@
  * Project:  FILL IN
  * Purpose:  FILL IN
  * ============================================================= */
+#ifndef PEX3FUNCTS_H
+#define PEX3FUNCTS_H
 
-#define BLANK '_'
-#define FILLED 'x'
+typedef struct DNA_struct {
+    char species[20];
+    char dna[500];
+} DNA;
 
-char** createBoard(int numRows, int numCols);
+DNA* readFile(char fileName[], int* numSequences);
 
-char** copyBoard(char** originalBoard, int numRows, int numCols);
+void printSequences(DNA sequences[], int numSeq);
 
-int compareBoards(char** board1, char** board2, int numRows, int numCols);
+int hammingDistance(char str1[], char str2[]);
 
-void freeBoard(char** board, int numRows, int numCols);
+float similarityScore(char seq1[], char seq2[]);
 
-void printBoard(char** board, int numRows, int numCols);
+int countMatches(char genome[], char seq[], float minScore);
 
-void writeBoardToFile(char** board, int numRows, int numCols, char* filename);
+float findBestMatch(char genome[], char seq[]);
 
-char** updateBoard(char** board, int automaton, int numRows, int numCols, int rowToUpdate);
+int findBestGenome(DNA sequences[], int numSeq, char unknownSeq[]);
+
+#endif //PEX3FUNCTS_H
