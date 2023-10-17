@@ -26,7 +26,7 @@ int main() {
     /** 
      * Note: The following printfs/calls run with pex3Data1.txt they
      * will be useful during development of your test cases and
-     * implmenentation of your functions. The function call is followed
+     * implementation of your functions. The function call is followed
      * by the expected result.  Leave these in your PEX.
     */
     int numSequences = 0;
