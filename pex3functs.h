@@ -8,10 +8,7 @@
 #ifndef PEX3FUNCTS_H
 #define PEX3FUNCTS_H
 
-typedef struct DNA_struct {
-    char species[20];
-    char dna[500];
-} DNA;
+// Define the DNA struct below using a typedef
 
 DNA* readFile(char fileName[], int* numSequences);
 
