@@ -31,8 +31,8 @@ int main() {
     */
     int numSequences = 0;
     DNA* knownSequences = readFile("pex3Data1.txt", &numSequences);
-    
     printSequences(knownSequences, numSequences);
+    
     printf("hamming = %d\n", hammingDistance("AAA", "CC")); // result= -1
     printf("hamming = %d\n", hammingDistance("ACCT", "ACCG")); //result= 1
     printf("hamming = %d\n", hammingDistance("ACGGT", "CCGTT")); //result= 2
